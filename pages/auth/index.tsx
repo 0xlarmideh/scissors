@@ -1,7 +1,6 @@
 import { Box, Container } from "@chakra-ui/react";
 import AuthForm from "../../components/auth/auth-form";
 import { useSession, useSupabaseClient } from "@supabase/auth-helpers-react";
-import AccountForm from "../../components/auth/account";
 import { ReactElement } from "react";
 // import { landingLayout } from "@/types/type";
 
