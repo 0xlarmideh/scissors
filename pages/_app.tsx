@@ -1,6 +1,24 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import { ChakraProvider } from "@chakra-ui/react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "../styles/features.scss";
+import "../styles/footer.scss";
+import "../styles/faqs.scss";
+import "../styles/header.scss";
+import "../styles/navbar.scss";
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+
+export default function MyApp({
+  Component,
+  pageProps,
+}: {
+  Component: React.ComponentType;
+  pageProps: any;
+}) {
+  return (
+    <ChakraProvider>
+      <Component {...pageProps} />
+      <ToastContainer />
+    </ChakraProvider>
+  );
 }
