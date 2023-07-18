@@ -22,14 +22,24 @@ const Login = () => {
       router.push("/");
     }
   }, [session]);
+  console.log(session)
 
   return (
     <>
       {!session ? (
-        <Container className="auth" maxW="500px">
-          <AuthForm />
+        <Container
+          minH="100vh"
+          display="flex"
+          alignItems="center"
+          className="auth"
+        >
+          <Box w="500px">
+            <AuthForm />
+          </Box>
         </Container>
-      ) : <Box>You are logged in</Box>}
+      ) : (
+        <Box>You are logged in</Box>
+      )}
     </>
   );
 };
