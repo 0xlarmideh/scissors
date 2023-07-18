@@ -6,11 +6,14 @@ import Navbar from "@/components/navbar/navbar";
 import { Container } from "@chakra-ui/react";
 import React from "react";
 import { toast } from "react-toastify";
+import Supabase from "../config/supabase";
 
 const HomePage = () => {
   const handleClick = () => {
     toast.success("Hello world!");
   };
+
+  console.log(Supabase)
 
   return (
     <>
