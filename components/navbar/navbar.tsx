@@ -46,7 +46,7 @@ function Navbar() {
             gap={2}
           >
             <Button bg={"transparent"} fontSize={"xl"} borderRadius={"3rem"}>
-              <Link href="/signin">Login</Link>
+              <Link href="/auth">Login</Link>
             </Button>
 
             <Button
@@ -56,7 +56,7 @@ function Navbar() {
               bgColor={"blue"}
             >
               <Link
-                href="/signup"
+                href="/auth"
                 style={{
                   color: "white",
                 }}
