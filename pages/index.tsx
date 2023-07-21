@@ -10,13 +10,11 @@ import Supabase from "../config/supabase";
 import { useSession } from "@supabase/auth-helpers-react";
 
 const HomePage = () => {
-  const handleClick = () => {
-    toast.success("Hello world!");
-  };
+  // const handleClick = () => {
+  //   toast.success("Hello world!");
+  // };
 
-  console.log(Supabase)
-  const session = useSession();
-  console.log(session)
+  // const session = useSession();
 
   return (
     <>
